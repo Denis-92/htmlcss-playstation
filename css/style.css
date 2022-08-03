@@ -9,7 +9,6 @@ img {
 /* ----- CONTENT ----- */
 
 #cover-purchase {
-    /* background-image: url('img/returnal-listing-thumb-01-ps5.jpg'); */
     background-color: black;
     color: white;
     background-image: url("../img/returnal-listing-thumb-01-ps5.jpg");
@@ -20,7 +19,6 @@ img {
 
 #game-takes-two {
     background-color: black;
-    color: white;
 }
 
 #new-games {
