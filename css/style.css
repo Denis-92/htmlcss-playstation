@@ -12,4 +12,6 @@ img {
     /* background-image: url('img/returnal-listing-thumb-01-ps5.jpg'); */
     background-color: black;
     color: white;
+    background-image: url("../img/returnal-listing-thumb-01-ps5.jpg");
+    background-size: 100vh;
 }
