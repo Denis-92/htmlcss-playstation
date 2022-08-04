@@ -8,6 +8,10 @@ img {
 
 /* ----- CONTENT ----- */
 
+#dm-bg-header {
+    background-color: royalblue;
+}
+
 #cover-purchase {
     background-color: black;
     color: white;
