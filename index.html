@@ -21,22 +21,126 @@
     <!-- HEADER -->
     <header>
 
-        <div class="container">
+        <div class="fixed-top">
 
-            <div class="row">
+            <div class="container-fluid">
 
+                <div class="d-flex justify-content-end py-2">
+
+                    <img src="img/sony_logo.svg" alt="Logo sony" class="img-fluid w-100px">
+
+                </div>
+
+                <!-- 
                 <div class="col-12 bg-black text-end text-white">
                     <h2>SONY</h2>
                 </div>
 
                 <div class="col-2">
-                    <!-- USA NAVBAR -->
                     <img src="img/play_logo.svg" alt="Logo Playstation">
                 </div>
+                 -->
 
             </div>
 
         </div>
+
+        <!-- NAVBAR -->
+        <div class="div">
+
+            <nav class="navbar navbar-expand-lg bg-light">
+
+                <div class="container-fluid">
+
+                    <a class="navbar-brand" href="#">
+                        <img src="img/play_logo.svg" alt="PlayStation" />
+                    </a>
+
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+
+                    <div class="navbar-collapse collapse justify-content-between" id="navbarNav" style="">
+
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item dropdown position-static">
+
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+
+                                    Giochi
+
+                                </button>
+
+                                <ul class="dropdown-menu w-100 rounded-0 mt-0 border-0 justify-content-center start-0">
+
+                                    <li>
+                                        <a class="dropdown-item" href="#">Playstation 5</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="#">Playstation 4</a>
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item" href="#"> Playstation 3</a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hardware</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Servizi</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Novità</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Fai acquisti</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link">Supporto</a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">My PlayStation</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-primary" href="#">Accedi</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link"><i class="bi bi-search"></i></a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </div>
+        <!-- /NAVBAR -->
 
 
     </header>
