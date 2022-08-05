@@ -31,3 +31,11 @@ img {
 .w-100px {
     width: 100px;
 }
+
+#jumbotron {
+    margin-top: 20rem;
+}
+
+#new-games {
+    background-color: darkslategray;
+}
