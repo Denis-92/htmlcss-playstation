@@ -6,13 +6,33 @@ img {
     width: 100%;
 }
 
+.dm-open-menu:hover {
+    transform: rotate(180deg);
+}
+
+.dm-open-menu {
+    width: 10px;
+}
+
+.dm-autowidth {
+    width: auto;
+}
+
+.dm-no-decoration a {
+    text-decoration: none;
+}
+
+
 /* ----- CONTENT ----- */
+
+/*#dm-header-height {}*/
 
 #dm-bg-header {
     background-color: royalblue;
 }
 
 #cover-purchase {
+    margin-top: 100px;
     background-color: black;
     color: white;
     background-image: url("../img/jumbo-bg.png");
@@ -44,4 +64,12 @@ img {
 
 #explore-ps-plus {
     background-color: grey;
+}
+
+#follow-social>* {
+    max-width: 700px;
+}
+
+.dm-w-35px {
+    width: 35px;
 }

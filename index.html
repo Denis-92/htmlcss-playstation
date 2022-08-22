@@ -21,7 +21,7 @@
     <!-- HEADER -->
     <header>
 
-        <div class="fixed-top">
+        <div class="fixed-top" id="dm-header-height">
 
             <div id="dm-bg-header">
 
@@ -32,18 +32,6 @@
                         <img src="img/sony_logo.svg" alt="Logo sony" class="img-fluid w-100px">
 
                     </div>
-
-                    <!-- 
-                    TODO - fixa NAVBAR
-
-                <div class="col-12 bg-black text-end text-white">
-                    <h2>SONY</h2>
-                </div>
-
-                <div class="col-2">
-                    <img src="img/play_logo.svg" alt="Logo Playstation">
-                </div>
-                 -->
 
                 </div>
 
@@ -66,75 +54,515 @@
 
                             </button>
 
-                            <div class="navbar-collapse collapse justify-content-between" id="navbarNav" style="">
+                            <div class="navbar-collapse collapse justify-content-between" id="navbarNav">
 
                                 <ul class="navbar-nav">
 
-                                    <li class="nav-item dropdown position-static">
+                                    <li class="nav-item dropdown-inline d-flex justify-content-end">
 
-                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">
-
+                                        <a class="nav-link fw-bold text-dark d-flex" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
                                             Giochi
+                                            <div class="dropdown-toggle-inline ms-2">
+                                                <img class="dm-open-menu" src="img/chevron-down-solid.svg"
+                                                    alt="Open Menu">
+                                            </div>
+                                        </a>
 
-                                        </button>
+                                        <div class="dropdown-menu w-100">
 
-                                        <ul
-                                            class="dropdown-menu w-100 rounded-0 mt-0 border-0 justify-content-center start-0">
+                                            <ul
+                                                class="rounded-0 mt-0 border-0 row justify-content-center start-0 align-items-center">
 
-                                            <li>
-                                                <a class="dropdown-item" href="#">Playstation 5</a>
-                                            </li>
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
 
-                                            <li>
-                                                <a class="dropdown-item" href="#">Playstation 4</a>
-                                            </li>
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
 
-                                            <li>
-                                                <a class="dropdown-item" href="#"> Playstation 3</a>
-                                            </li>
+                                                    <a class="dropdown-item text-center"
+                                                        href="#PlayStation-5">PlayStation 5</a>
 
-                                        </ul>
+                                                </li>
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center"
+                                                        href="#PlayStation-4">Playstation 4</a>
+                                                </li>
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center" href="#PlayStation-3">
+                                                        Playstation 3</a>
+                                                </li>
+
+                                            </ul>
+
+                                            <hr class="w-50 m-auto">
+
+                                            <div class="row">
+
+                                                <ul
+                                                    class="list-unstyled d-flex justify-content-around dm-no-decoration mt-2">
+
+                                                    <li><a href="#">Indie</a></li>
+                                                    <li><a href="#">Titoli</a></li>
+                                                    <li><a href="#">Free to Play</a></li>
+                                                    <li><a href="#">Sales</a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
 
                                     </li>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Hardware</a>
+                                    <li class="nav-item dropdown-inline d-flex justify-content-end">
+
+                                        <a class="nav-link fw-bold text-dark d-flex" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Hardware
+                                            <div class="dropdown-toggle-inline ms-2">
+                                                <img class="dm-open-menu" src="img/chevron-down-solid.svg"
+                                                    alt="Open Menu">
+                                            </div>
+                                        </a>
+
+                                        <div class="dropdown-menu w-100">
+
+                                            <ul
+                                                class="rounded-0 mt-0 border-0 row justify-content-center start-0 align-items-center">
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center"
+                                                        href="#PlayStation-5">PlayStation 5</a>
+
+                                                </li>
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center"
+                                                        href="#PlayStation-4">Playstation 4</a>
+                                                </li>
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center" href="#PlayStation-3">
+                                                        Playstation 3</a>
+                                                </li>
+
+                                            </ul>
+
+                                            <hr class="w-50 m-auto">
+
+                                            <div class="row">
+
+                                                <ul
+                                                    class="list-unstyled d-flex justify-content-around dm-no-decoration mt-2">
+
+                                                    <li><a href="#">Indie</a></li>
+                                                    <li><a href="#">Titoli</a></li>
+                                                    <li><a href="#">Free to Play</a></li>
+                                                    <li><a href="#">Sales</a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
                                     </li>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Servizi</a>
+                                    <li class="nav-item dropdown-inline d-flex justify-content-end">
+
+                                        <a class="nav-link fw-bold text-dark d-flex" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Servizi
+                                            <div class="dropdown-toggle-inline ms-2">
+                                                <img class="dm-open-menu" src="img/chevron-down-solid.svg"
+                                                    alt="Open Menu">
+                                            </div>
+                                        </a>
+
+                                        <div class="dropdown-menu w-100">
+
+                                            <ul
+                                                class="rounded-0 mt-0 border-0 row justify-content-center start-0 align-items-center">
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center"
+                                                        href="#PlayStation-5">PlayStation 5</a>
+
+                                                </li>
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center"
+                                                        href="#PlayStation-4">Playstation 4</a>
+                                                </li>
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center" href="#PlayStation-3">
+                                                        Playstation 3</a>
+                                                </li>
+
+                                            </ul>
+
+                                            <hr class="w-50 m-auto">
+
+                                            <div class="row">
+
+                                                <ul
+                                                    class="list-unstyled d-flex justify-content-around dm-no-decoration mt-2">
+
+                                                    <li><a href="#">Indie</a></li>
+                                                    <li><a href="#">Titoli</a></li>
+                                                    <li><a href="#">Free to Play</a></li>
+                                                    <li><a href="#">Sales</a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
                                     </li>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Novità</a>
+                                    <li class="nav-item dropdown-inline d-flex justify-content-end">
+
+                                        <a class="nav-link fw-bold text-dark d-flex" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Novità
+                                            <div class="dropdown-toggle-inline ms-2">
+                                                <img class="dm-open-menu" src="img/chevron-down-solid.svg"
+                                                    alt="Open Menu">
+                                            </div>
+                                        </a>
+
+                                        <div class="dropdown-menu w-100">
+
+                                            <ul
+                                                class="rounded-0 mt-0 border-0 row justify-content-center start-0 align-items-center">
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center"
+                                                        href="#PlayStation-5">PlayStation 5</a>
+
+                                                </li>
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center"
+                                                        href="#PlayStation-4">Playstation 4</a>
+                                                </li>
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center" href="#PlayStation-3">
+                                                        Playstation 3</a>
+                                                </li>
+
+                                            </ul>
+
+                                            <hr class="w-50 m-auto">
+
+                                            <div class="row">
+
+                                                <ul
+                                                    class="list-unstyled d-flex justify-content-around dm-no-decoration mt-2">
+
+                                                    <li><a href="#">Indie</a></li>
+                                                    <li><a href="#">Titoli</a></li>
+                                                    <li><a href="#">Free to Play</a></li>
+                                                    <li><a href="#">Sales</a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
                                     </li>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Fai acquisti</a>
+                                    <li class="nav-item dropdown-inline d-flex justify-content-end">
+
+                                        <a class="nav-link fw-bold text-dark d-flex" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Fai acquisti
+                                            <div class="dropdown-toggle-inline ms-2">
+                                                <img class="dm-open-menu" src="img/chevron-down-solid.svg"
+                                                    alt="Open Menu">
+                                            </div>
+                                        </a>
+
+                                        <div class="dropdown-menu w-100">
+
+                                            <ul
+                                                class="rounded-0 mt-0 border-0 row justify-content-center start-0 align-items-center">
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center"
+                                                        href="#PlayStation-5">PlayStation 5</a>
+
+                                                </li>
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center"
+                                                        href="#PlayStation-4">Playstation 4</a>
+                                                </li>
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center" href="#PlayStation-3">
+                                                        Playstation 3</a>
+                                                </li>
+
+                                            </ul>
+
+                                            <hr class="w-50 m-auto">
+
+                                            <div class="row">
+
+                                                <ul
+                                                    class="list-unstyled d-flex justify-content-around dm-no-decoration mt-2">
+
+                                                    <li><a href="#">Indie</a></li>
+                                                    <li><a href="#">Titoli</a></li>
+                                                    <li><a href="#">Free to Play</a></li>
+                                                    <li><a href="#">Sales</a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
                                     </li>
 
-                                    <li class="nav-item">
-                                        <a class="nav-link">Supporto</a>
+                                    <li class="nav-item dropdown-inline d-flex justify-content-end">
+
+                                        <a class="nav-link fw-bold text-dark d-flex" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Supporto
+                                            <div class="dropdown-toggle-inline ms-2">
+                                                <img class="dm-open-menu" src="img/chevron-down-solid.svg"
+                                                    alt="Open Menu">
+                                            </div>
+                                        </a>
+
+                                        <div class="dropdown-menu w-100">
+
+                                            <ul
+                                                class="rounded-0 mt-0 border-0 row justify-content-center start-0 align-items-center">
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center"
+                                                        href="#PlayStation-5">PlayStation 5</a>
+
+                                                </li>
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center"
+                                                        href="#PlayStation-4">Playstation 4</a>
+                                                </li>
+
+                                                <li
+                                                    class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                    <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                        alt="Logo PlayStation" />
+
+                                                    <a class="dropdown-item text-center" href="#PlayStation-3">
+                                                        Playstation 3</a>
+                                                </li>
+
+                                            </ul>
+
+                                            <hr class="w-50 m-auto">
+
+                                            <div class="row">
+
+                                                <ul
+                                                    class="list-unstyled d-flex justify-content-around dm-no-decoration mt-2">
+
+                                                    <li><a href="#">Indie</a></li>
+                                                    <li><a href="#">Titoli</a></li>
+                                                    <li><a href="#">Free to Play</a></li>
+                                                    <li><a href="#">Sales</a></li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
                                     </li>
 
                                 </ul>
 
-                                <ul class="navbar-nav">
+                                <div class="d-flex justify-content-end">
 
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">My PlayStation</a>
-                                    </li>
+                                    <div class="navbar-nav">
 
-                                    <li class="nav-item">
-                                        <a class="nav-link btn btn-primary" href="#">Accedi</a>
-                                    </li>
+                                        <!-- My PlayStation -->
+                                        <div class="nav-item d-flex justify-content-end dropdown-inline">
 
-                                    <li class="nav-item">
-                                        <a class="nav-link"><i class="bi bi-search"></i></a>
-                                    </li>
+                                            <a class="nav-link fw-bold text-dark d-flex" href="#" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                My PlayStation
+                                                <div class="dropdown-toggle-inline">
+                                                    <img src="img/chevron-down-solid.svg" alt="Open Menu"
+                                                        class="dm-open-menu">
+                                                </div>
 
-                                </ul>
+                                            </a>
+
+                                            <div class="dropdown-menu w-100">
+
+                                                <ul
+                                                    class="rounded-0 mt-0 border-0 row justify-content-center start-0 align-items-center">
+
+                                                    <li
+                                                        class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                        <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                            alt="Logo PlayStation" />
+
+                                                        <a class="dropdown-item text-center"
+                                                            href="#PlayStation-5">PlayStation 5</a>
+
+                                                    </li>
+
+                                                    <li
+                                                        class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                        <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                            alt="Logo PlayStation" />
+
+                                                        <a class="dropdown-item text-center"
+                                                            href="#PlayStation-4">Playstation 4</a>
+                                                    </li>
+
+                                                    <li
+                                                        class="d-flex flex-column align-items-center justify-content-center col-3">
+
+                                                        <img class="dm-autowidth" src="img/play-menu-ico.png"
+                                                            alt="Logo PlayStation" />
+
+                                                        <a class="dropdown-item text-center" href="#PlayStation-3">
+                                                            Playstation 3</a>
+                                                    </li>
+
+                                                </ul>
+
+                                                <hr class="w-50 m-auto">
+
+                                                <div class="row">
+
+                                                    <ul
+                                                        class="list-unstyled d-flex justify-content-around dm-no-decoration mt-2">
+
+                                                        <li><a href="#">Indie</a></li>
+                                                        <li><a href="#">Titoli</a></li>
+                                                        <li><a href="#">Free to Play</a></li>
+                                                        <li><a href="#">Sales</a></li>
+
+                                                    </ul>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <!-- /My PlayStation -->
+
+
+
+                                        <div class="nav-item">
+                                            <a class="nav-link btn btn-primary rounded-pill" href="#">Accedi</a>
+                                        </div>
+
+                                        <div class="nav-item">
+                                            <a class="nav-link"><i class="bi bi-search"></i></a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
 
                             </div>
 
@@ -190,7 +618,7 @@
         <!-- /PURCHASE GAME -->
 
         <!-- COVERS GAMES -->
-        <div class="container py-5">
+        <div class="container py-5" id="covers-games">
 
             <div class="row">
 
@@ -224,7 +652,7 @@
         <!-- /COVERS GAMES -->
 
         <!-- PRESENTATION CONSOLE PS5 -->
-        <div class="container my-5">
+        <div class="container my-5" id="PlayStation-5">
 
             <div class="row">
 
@@ -439,6 +867,7 @@
             <div class="container my-5">
 
                 <div class="row">
+                    <!-- align-items? -->
 
                     <div class="col-12 col-md-6 py-5">
 
@@ -466,11 +895,252 @@
         </section>
         <!-- /EXPLORE PS - PLUS -->
 
+        <!-- ON-SALE PS STORE -->
+        <section id="sale-ps-store">
+
+            <div class="container my-5">
+
+                <div class="row">
+
+                    <div class="col-12 text-center">
+
+                        <h2>Nuovi sconti sul PlayStation Store</h2>
+                        <p>Sconti pazzeschi, collezioni curate e saldi stagionali su PS5, PS4 e PS VR, tutti in un unico
+                            posto.</p>
+
+                    </div>
+
+                    <div class="col-12 col-md-4">
+
+                        <img src="img/playstation-store-games-under-20-spotlight.jpg" alt="Giochi scontati">
+
+                    </div>
+
+                    <div class="col-12 col-md-4">
+
+                        <img src="img/playstation-store-golden-week-sale-spotlight.jpg" alt="Super sconti, fino al 80%">
+
+                    </div>
+
+                    <div class="col-12 col-md-4">
+
+                        <img src="img/playstation-store-free-to-play-spotlight.png" alt="Free to Play">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /ON-SALE PS STORE -->
+
+        <!-- PLAYSTATION NOW -->
+        <section id="playstation-now" class="bg-dark">
+
+            <div class="container my-5">
+
+                <div class="row">
+                    <!-- align-items? -->
+
+                    <div class="col-12 col-md-6 py-5">
+
+                        <img src="img/ps-now-logo-two-column.png" alt="Playstation Now"> <!-- img-fluid? -->
+
+                        <p class="text-white">Ottieni l'accesso immediato a una vastissima raccolta di oltre 800 giochi
+                            per PS4, PS3 e PS2 su PS4 o PC Windows, con nuovi titoli aggiunti ogni mese.</p>
+
+                        <a class="btn btn-primary rounded-5 bg-danger" href="#" role="button">Esplora PlayStation
+                            Now</a>
+
+                    </div>
+
+                    <div class="col-6 d-none d-md-block">
+
+                        <img class="img-fluid" src="img/ps-now-april-featured-image-block.png"
+                            alt="April monthly games for PS Now">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /PLAYSTATION NOW -->
+
+        <!-- FOLLOW SOCIAL -->
+        <section id="follow-social">
+
+            <div class="container my-5">
+
+                <div class="row">
+
+                    <div class="col-12 text-center my-2">
+                        <h3>Seguici sui social media</h3>
+                    </div>
+
+                    <div class="col-6 col-sm-3">
+                        <img src="img/twitter.jpg" alt="Twitter">
+                    </div>
+
+                    <div class="col-6 col-sm-3">
+                        <img src="img/facebook.jpg" alt="Facebook">
+                    </div>
+
+                    <div class="col-6 col-sm-3">
+                        <img src="img/instagram.jpg" alt="Instagram">
+                    </div>
+
+                    <div class="col-6 col-sm-3">
+                        <img src="img/youtube.png" alt="Youtube">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /FOLLOW SOCIAL -->
+
+
+
     </main>
     <!-- /MAIN -->
 
     <!-- FOOTER -->
-    <footer></footer>
+    <footer class="bg-dark">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12 col-lg-6 col-xxl-9">
+
+                    <img src="img/ps-footer.svg" alt="Logo PlayStation" class="w-auto my-5">
+
+                    <div class="d-flex align-items-center">
+
+                        <p class="align-items-center text-white">
+
+                            <img src="img/language-globe.svg" alt="Globe" class="d-inline dm-w-35px">
+
+                            <span>Country / Region : Italy</span>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-2 col-xxl-1 py-2">
+
+                    <ul class="list-unstyled list">
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Link Footer</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Link Footer</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Link Footer</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Link Footer</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Link Footer</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-2 col-xxl-1 py-2">
+
+                    <ul class="list-unstyled list">
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Link Footer</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Link Footer</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Link Footer</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Link Footer</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Link Footer</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Link Footer</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Link Footer</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-2 col-xxl-1 py-2">
+
+                    <ul class="list-unstyled list">
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Link Footer</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Link Footer</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Link Footer</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-6 text-white mt-5">
+
+                    <img src="img/sie-logo.svg" alt="Logo Sony" class="w-100px">
+
+                    <p>
+                        Website 2021 Sony Interactive Entertainment Europe Limited. Tutti i contenuti, nomi dei giochi,
+                        nomi commerciali e/o di abbigliamento, marchi registrati, grafica e immagini associati sono
+                        marchi registrati e/o materiale protetto da copyright dei rispettivi proprietari. Tutti i
+                        diritti riservati.
+
+                        <a href="#" class="text-white">Maggiori Info</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
     <!-- /FOOTER -->
 
 </body>
