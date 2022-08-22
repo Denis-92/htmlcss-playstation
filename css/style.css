@@ -22,6 +22,14 @@ img {
     text-decoration: none;
 }
 
+.dm-text-blue {
+    color: blue;
+}
+
+.dm-bg-blue {
+    background-color: blue;
+}
+
 
 /* ----- CONTENT ----- */
 
